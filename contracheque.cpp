@@ -32,7 +32,7 @@ main(){
 			erro = false;
 			break;
 		} else {
-			cout << "Mano, insira um valor válido. Ou é 0 ou é 1. Faz favor \n"; 
+			cout << "Insira um valor válido. (0 ou é 1) \n"; 
 		}
 	}
 		
@@ -59,7 +59,7 @@ main(){
 	} else if (salarioBase > 4664.68){
 		impostoRenda = salarioBase * 0.0275;
 	} else {
-		cout << "Mano, insira um valor válido. Faz favor \n";
+		cout << "Insira um valor válido. (0 ou é 1) \n";
 	}
 	
 	// Cálculo do Salário Família
@@ -73,7 +73,7 @@ main(){
 		}
 	}
 	
-	// Cálculo FGTS (ainda tô vendo como faz a)
+	// Cálculo FGTS
 	fgts = salarioBase * 0.08;
 	
 	// Vale Transporte
@@ -86,13 +86,11 @@ main(){
 	// Cálculo do valor líquido
 	valorLiquido = salarioBase + vencimentos - descontos;
 		
-	//somar os descontos e subtrair todos eles com o salário base
-	
 	// Retornos
 	cout << "\n\n" << nome << ", você paga: \n\nR$" << inss << " de INSS; \n\n";
 	
 	if (salarioBase <= 1903.98) {
-		cout << "Não paga imposto, olha só que alegria; \n\n";	
+		cout << "Não paga imposto; \n\n";	
 	} else {
 		cout << "R$" << impostoRenda << " de Imposto de Renda; \n\n";
 	}
@@ -101,10 +99,10 @@ main(){
 		if (salarioBase <= 1364.43) {
 		cout << "Recebe R$" << salarioFamilia << " de Salário Família; \n\n";
 		} else if (salarioFamilia == 0) {
-			cout << "Sem Salário Família pra você, seu burguês safado; \n\n";
+			cout << "Não tem direito a Salário Família; \n\n";
 		}
 	} else if (confirmaFilho == false) {
-		cout << "Você não tem direito a Salário Família, já que você não tem filho(a); \n\n";
+		cout << "Não tem direito a Salário Família, já que você não tem filho(a) menor de 14 anos; \n\n";
 	}
 	
 	cout << "Recebe R$" << valeTransporte << " de Vale Transporte; \n\n";
