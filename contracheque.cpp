@@ -116,7 +116,7 @@ main(){
 
 /*
 
-Links de Refêrencia:
+Links de Refêrencia dos Valores Utilizados (Maio de 2019):
 
 INSS: https://calendariobolsafamilia2019.com.br/tabela-inss-2019/
 Imposto de Renda: https://impostoderenda2019.blog.br/calculo-imposto-de-renda-2019/
@@ -124,16 +124,3 @@ Salário Família: http://audtecgestao.com.br/capa.asp?infoid=3964
 FGTS: https://www.socontabilidade.com.br/conteudo/duvida4.php
 
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
